@@ -18,5 +18,6 @@ public class Test {
         subject.add(new Observer1());
         subject.add(new Observer2());
         subject.operation();
+        System.out.println(System.getProperty("java.class.path"));
     }
 }

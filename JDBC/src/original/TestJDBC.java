@@ -16,9 +16,9 @@ public class TestJDBC {
         String pwd = "111";
         String driver = "com.mysql.jdbc.Driver";
         String url = "jdbc:mysql://localhost:3306/mianshi";
-        Connection connection = null;
-        Statement statement = null;
-        ResultSet resultSet = null;
+        Connection connection;
+        Statement statement;
+        ResultSet resultSet;
         Class.forName(driver);
         connection = DriverManager.getConnection(url,user,pwd);
         connection.setAutoCommit(false);

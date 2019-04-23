@@ -28,7 +28,7 @@ public class TestJDBC {
         statement = connection.createStatement();
 
         statement.execute("insert into employee(name,age) values('caotao','22')");
-        statement.execute("insert into employee(name,age) values('李UI下那个样','1')");
+        statement.execute("insert into employee(name,age) values('李UI下个样','1')");
         statement.execute("insert into employee(name,age) values('liuxiangyang','24')");
 //        int i = 1/0;
         resultSet = statement.executeQuery("select * from employee");

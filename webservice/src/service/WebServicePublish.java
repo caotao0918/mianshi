@@ -14,6 +14,6 @@ public class WebServicePublish {
     public static void main(String[] args) {
         String address = "http://localhost:8089/webservice";
         Endpoint.publish(address,new WebServiceImpl());
-        System.out.println("发布成功。。。");
+        System.out.println("webservice发布成功。。。");
     }
 }

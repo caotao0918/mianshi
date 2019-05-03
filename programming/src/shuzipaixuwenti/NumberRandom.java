@@ -13,7 +13,7 @@ public class NumberRandom {
 
     private static boolean isValidNumber(String str) { // 检查是否包含12345这五个数，不包含返回false
         for (String number : mustExistNumber) {
-            if (str.indexOf(number) < 0)
+            if (!str.contains(number))
                 return false;
         }
         // 检查是否有两个2，只有一个返回false
@@ -25,10 +25,7 @@ public class NumberRandom {
             return false;
         }
         // 检查是否存在35在一起，有返回false
-        if (str.indexOf("35") >= 0 || str.indexOf("53") >= 0) {
-            return false;
-        }
-        return true;
+        return !str.contains("35") && !str.contains("53");
     }
 
     public static void main(String[] args) {

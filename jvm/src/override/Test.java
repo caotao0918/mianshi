@@ -11,9 +11,10 @@ package override;
 public class Test {
     public static void main(String[] args) {
         Parent parent = new Parent();
+        Parent child = new Child();
         String s = parent.sayHello();
         System.out.println(s);
-        String s1 = parent.sayHi(s);
-        System.out.println(s1);
+        String str = child.sayHi("str");
+        System.out.println(str);
     }
 }

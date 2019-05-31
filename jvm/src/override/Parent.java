@@ -13,14 +13,7 @@ public class Parent {
         System.out.println("hello...");
         return "hello";
     }
-    public static String sayHi(String i) {
+    public String sayHi(String i) {
         return "hi" + i;
-    }
-
-    public static void main(String[] args) {
-        Parent parent = new Parent();
-        String str = "cat";
-        String s = parent.sayHi(str);
-        System.out.println(s);
     }
 }
